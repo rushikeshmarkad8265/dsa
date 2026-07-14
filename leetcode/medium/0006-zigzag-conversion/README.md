@@ -64,9 +64,9 @@ Output: "A"
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.5 MB  
-**Submitted:** 2026-07-14T09:45:56.453Z  
+**Runtime:** 10 ms (beats 59.98%)  
+**Memory:** 19.4 MB (beats 47.70%)  
+**Submitted:** 2026-07-14T09:46:01.374Z  
 
 ```py
 class Solution:
