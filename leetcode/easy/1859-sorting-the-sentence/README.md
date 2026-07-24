@@ -45,15 +45,24 @@ Explanation: Sort the words in s to their original positions "Me1 Myself2 and3 I
 ## Solution
 
 **Language:** Python  
-**Runtime:** 53 ms  
-**Memory:** 19.1 MB  
-**Submitted:** 2026-07-24T08:11:22.869Z  
+**Runtime:** 36 ms  
+**Memory:** 19.3 MB  
+**Submitted:** 2026-07-24T08:15:16.583Z  
 
 ```py
 class Solution:
     def sortSentence(self, s: str) -> str:
         str_list = s.split()
-        return str_list
+        result = [""]*len(str_list)
+
+        for word in str_list:
+            n = len(word)-1
+            pos = int(word[n])
+
+            result[pos-1] = word[:n]
+
+        return result
+
 ```
 
 ---
