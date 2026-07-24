@@ -9,4 +9,4 @@ class Solution:
 
             result[pos-1] = word[:n]
 
-        return result
+        return str(result)
