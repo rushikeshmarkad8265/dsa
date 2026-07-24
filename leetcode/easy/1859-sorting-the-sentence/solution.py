@@ -10,9 +10,9 @@ class Solution:
             result[pos-1] = word[:n]
         del str_list
 
-        ans = ''
-        for word in result:
-            ans += word+' '
+        # ans = ''
+        # for word in result:
+        #     ans += word+' '
         
-        ans = ans[:len(ans)-1]
-        return ans
+        # ans = ans[:len(ans)-1]
+        return ' '.join(result)
