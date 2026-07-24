@@ -45,9 +45,9 @@ Explanation: Sort the words in s to their original positions "Me1 Myself2 and3 I
 ## Solution
 
 **Language:** Python  
-**Runtime:** 38 ms (beats 90.31%)  
-**Memory:** 19.5 MB (beats 12.01%)  
-**Submitted:** 2026-07-24T08:24:13.895Z  
+**Runtime:** 46 ms (beats 47.56%)  
+**Memory:** 19.1 MB (beats 96.35%)  
+**Submitted:** 2026-07-24T08:26:28.469Z  
 
 ```py
 class Solution:
@@ -62,12 +62,12 @@ class Solution:
             result[pos-1] = word[:n]
         del str_list
 
-        ans = ''
-        for word in result:
-            ans += word+' '
+        # ans = ''
+        # for word in result:
+        #     ans += word+' '
         
-        ans = ans[:len(ans)-1]
-        return ans
+        # ans = ans[:len(ans)-1]
+        return ' '.join(result)
 
 ```
 
