@@ -8,5 +8,11 @@ class Solution:
             pos = int(word[n])
 
             result[pos-1] = word[:n]
+        del str_list
 
-        return str(result)
+        ans = ''
+        for word in result:
+            ans += word+' '
+        
+        ans = ans[:len(ans)-1]
+        return ans
