@@ -1,4 +1,4 @@
-# Select All
+# Select By ID
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -24,7 +24,7 @@ The **CITY** table is described as follows:
 **Language:** db2  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T04:45:08.777Z  
+**Submitted:** 2026-07-29T04:46:24.118Z  
 
 ```db2
 
@@ -35,7 +35,8 @@ The **CITY** table is described as follows:
     3. Type your code immediately after comment. Don't leave any blank line.
 */
 SELECT *
-FROM CITY;
+FROM CITY AS c
+WHERE c.ID = 1661;
 
 ```
 
