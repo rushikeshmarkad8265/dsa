@@ -1,4 +1,4 @@
-# Weather Observation Station 5
+# Weather Observation Station 6
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -25,7 +25,7 @@ where *LAT\_N* is the northern latitude and *LONG\_W* is the western longitude.
 **Language:** db2  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T17:22:55.944Z  
+**Submitted:** 2026-07-29T17:32:41.518Z  
 
 ```db2
 
@@ -36,17 +36,9 @@ where *LAT\_N* is the northern latitude and *LONG\_W* is the western longitude.
     3. Type your code immediately after comment. Don't leave any blank line.
 */
 
--- Query 1: Get the single shortest city name
-SELECT CITY, LENGTH(CITY)
+SELECT DISTINCT CITY 
 FROM STATION
-ORDER BY LENGTH(CITY) ASC, CITY ASC
-FETCH FIRST 1 ROWS ONLY;
-
--- Query 2: Get the single longest city name
-SELECT CITY, LENGTH(CITY)
-FROM STATION
-ORDER BY LENGTH(CITY) DESC, CITY ASC
-FETCH FIRST 1 ROWS ONLY;
+WHERE substr(city,1,1) in ('A','E','I','O','U');
 
 ```
 
