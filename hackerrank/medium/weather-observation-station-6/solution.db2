@@ -6,14 +6,6 @@
     3. Type your code immediately after comment. Don't leave any blank line.
 */
 
--- Query 1: Get the single shortest city name
-SELECT CITY, LENGTH(CITY)
+SELECT DISTINCT CITY 
 FROM STATION
-ORDER BY LENGTH(CITY) ASC, CITY ASC
-FETCH FIRST 1 ROWS ONLY;
-
--- Query 2: Get the single longest city name
-SELECT CITY, LENGTH(CITY)
-FROM STATION
-ORDER BY LENGTH(CITY) DESC, CITY ASC
-FETCH FIRST 1 ROWS ONLY;
+WHERE substr(city,1,1) in ('A','E','I','O','U');
