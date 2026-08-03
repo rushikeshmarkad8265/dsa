@@ -1,6 +1,7 @@
-SELECT c.name
-FROM CITY c
+SELECT co.Continent, FLOOR((AVG(c.Population)))
+FROM CITY AS c
 JOIN
-COUNTRY co 
-ON c.COUNTRYCODE =co.Code
-WHERE co.CONTINENT='Africa'
+COUNTRY co
+ON
+c.CountryCode = co.code
+GROUP BY co.Continent
