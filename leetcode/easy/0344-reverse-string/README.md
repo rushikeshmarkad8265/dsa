@@ -36,9 +36,9 @@ Output: ["h","a","n","n","a","H"]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 8 ms (beats 9.99%)  
-**Memory:** 23.6 MB (beats 19.91%)  
-**Submitted:** 2026-08-21T16:13:36.393Z  
+**Runtime:** 0 ms  
+**Memory:** 19.3 MB  
+**Submitted:** 2026-08-21T16:14:07.890Z  
 
 ```py
 class Solution:
@@ -46,13 +46,7 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        start = 0
-        end = len(s)-1
-        while(start<=end):
-            s[start],s[end]=s[end],s[start]
-            start+=1
-            end-=1
-            
+        s.reverse()
 ```
 
 ---
